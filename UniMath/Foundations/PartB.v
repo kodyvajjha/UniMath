@@ -53,7 +53,6 @@ Fixpoint isofhlevel (n : nat) (X : UU) : UU
      | O => iscontr X
      | S m => ∏ x : X, ∏ x' : X, (isofhlevel m (x = x'))
      end.
-
 (* induction induction *)
 
 Theorem hlevelretract (n : nat) {X Y : UU} (p : X -> Y) (s : Y -> X)
