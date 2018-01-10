@@ -4,7 +4,6 @@
 Require Export UniMath.Foundations.PartA.
 Require Export UniMath.Foundations.PartB.
 Require Export UniMath.Foundations.PartD.
-Require Export Uni
 (*The following is_a_prop given in the problem and is isaprop in UniMath. *)
 Definition isProp (X:UU) : UU := ∏ (a b : X) , iscontr(paths a b).
 
